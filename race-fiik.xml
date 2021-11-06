@@ -4,7 +4,7 @@
 		<name>Fuck if I know</name>
 		<author url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Discord DM's</author>
 		<update version="0.2.8">
-			<file name="race-fiik.xml"/>
+			<file name="race-fiik.xml" url="https://raw.githubusercontent.com/Turtrik/AuroraBuilder/main/race-fiik.xml"/>
 		</update>
 	</info>
 
