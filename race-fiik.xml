@@ -63,18 +63,24 @@
 		<description>
 			<p>You carry the sense of “strong beyond strong,” and dislike defeat. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't use it again until you finish a long rest.</p>
 		</description>
+		<sheet>
 			<description>You carry the sense of “strong beyond strong,” and dislike defeat. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't use it again until you finish a long rest.</description>
+		</sheet>
 	</element>
 	<element name="Supernatural Strength" type="Racial Trait" source="My Ass" id="ID_RACIAL_TRAIT_FIIK_STRENGTH">
 		<description>
 			<p>You have been known to be able to tear even the strongest of Yōkai apart with their raw strength, and are reputed to launch boulders at their opponents without a struggle. When wielding a melee weapon without the heavy or two-handed properties, you can use either your Strength or Dexterity modifier for the attack and damage roll of the attack.</p>
 		</description>
+		<sheet>
 			<description>have been known to be able to tear even the strongest of Yōkai apart with their raw strength, and are reputed to launch boulders at their opponents without a struggle. When wielding a melee weapon without the heavy or two-handed properties, you can use either your Strength or Dexterity modifier for the attack and damage roll of the attack.</description>
+		</sheet>
 	</element>
 	<element name="Powerful Build" type="Racial Trait" source="My Ass" id="ID_RACIAL_TRAIT_FIIK_BUILD">
 		<description>
 			<p>You count as one size larger when determining the weight you can push, drag, or lift. This doesn't affect your carrying capacity.</p>
 		</description>
+		<sheet>
 			<description>You count as one size larger when determining the weight you can push, drag, or lift. This doesn't affect your carrying capacity.</description>
+		</sheet>
 	</element>
 </elements>
