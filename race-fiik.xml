@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fuck if I know</name>
+		<author url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Discord DM's</author>
+		<update version="0.2.8">
+			<file name="race-fiik.xml"/>
+		</update>
+	</info>
+
+	<element name="Fuck if I know" type="Race" source="My Ass" id="ID_SRD_RACE_FIIK">
+		<description>
+			<p class="flavor">*Insert whatever lore Zach and Jake concocted*</p>
+			
+			<h4>?????? TRAITS</h4>
+			<p>Your dwarf character has an assortment of inborn abilities, part and parcel of dwarven nature.</p>			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Dwarves mature at the same rate as humans, but can live for much longer, often reaching 280 years of age.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Due to their origins, many tend towards evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> They are built like humans but are much more bulky, tall and weigh excessively more anywhere between 200-400 pounds.  Your height ranges from 6 to well over 7 feet in height; you size is Medium</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Menacing</em></strong> People tend to get nervous around you.  You gain proficienct in the Intimidation skill.</p>
+			<p class="indent"><strong><em>Kanabo</em></strong> You carry the sense of "strong beyond strong," and dislike defeat.  When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.  Once you use this trait, you can't use it again untill you finish a long rest.</p>
+			<p class="indent"><strong><em>Supernatural Strength</em></strong> They have been known to be able to tear even the strongest of Yōkai apart with their raw strength, and are reputed to launch boulders at their opponents without a struggle. When wielding a melee weapon without the heavy or two-handed properties, you can use either your Strength or Dexterity modifier for the attack and damage roll of the attack.</p>
+			<p class="indent"><strong><em>Powerful Build</em></strong> You count as one size larger when determining the weight you can push, drag, or lift. This doesn't affect your carrying capacity.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common (Cazan), Common, Undercommon and your choice of either Giant or Infernal.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Poopy</set>
+			<set name="names" type="female">a</set>
+			<set name="names" type="clan">Pants</set>
+			<set name="names-format">{{name}} {{clan}}</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_MM_LANGUAGE_CAZAN" />
+			<select type="Language" name="Racial Language" supports="ID_LANGUAGE_INFERNAL|ID_LANGUAGE_GIANT" />
+			<grant type="Language" id="ID_LANGUAGE_UNDERCOMMON" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FIIK_MENACING" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FIIK_KANABO" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FIIK_STRENGTH" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FIIK_BUILD" />
+		</rules>
+	</element>
+	<element name="Menacing" type="Racial Trait" source="My Ass" id="ID_RACIAL_TRAIT_FIIK_MENACING">
+		<description>
+			<p>People tend to get nervous around you. You gain proficiency in the Intimidation skill.</p>
+		</description>
+		<sheet>
+			<description>People tend to get nervous around you. You gain proficiency in the Intimidation skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
+	</element>
+	<element name="Kanabo" type="Racial Trait" source="My Ass" id="ID_RACIAL_TRAIT_FIIK_KANABO">
+		<description>
+			<p>You carry the sense of “strong beyond strong,” and dislike defeat. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+			<description>You carry the sense of “strong beyond strong,” and dislike defeat. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't use it again until you finish a long rest.</description>
+	</element>
+	<element name="Supernatural Strength" type="Racial Trait" source="My Ass" id="ID_RACIAL_TRAIT_FIIK_STRENGTH">
+		<description>
+			<p>You have been known to be able to tear even the strongest of Yōkai apart with their raw strength, and are reputed to launch boulders at their opponents without a struggle. When wielding a melee weapon without the heavy or two-handed properties, you can use either your Strength or Dexterity modifier for the attack and damage roll of the attack.</p>
+		</description>
+			<description>have been known to be able to tear even the strongest of Yōkai apart with their raw strength, and are reputed to launch boulders at their opponents without a struggle. When wielding a melee weapon without the heavy or two-handed properties, you can use either your Strength or Dexterity modifier for the attack and damage roll of the attack.</description>
+	</element>
+	<element name="Powerful Build" type="Racial Trait" source="My Ass" id="ID_RACIAL_TRAIT_FIIK_BUILD">
+		<description>
+			<p>You count as one size larger when determining the weight you can push, drag, or lift. This doesn't affect your carrying capacity.</p>
+		</description>
+			<description>You count as one size larger when determining the weight you can push, drag, or lift. This doesn't affect your carrying capacity.</description>
+	</element>
+</elements>
