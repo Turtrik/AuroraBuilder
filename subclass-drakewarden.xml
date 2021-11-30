@@ -1,0 +1,128 @@
+<elements>
+<element name="Drakewarden" type="Archetype" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_RANGER_DRAKEWARDEN">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Your connection to the natural world takes the form of a draconic spirit, which can manifest in physical form as a drake. As your powers grow, your drake grows as well, blossoming from a small four-legged companion to a majestic winged creature large and strong enough for you to ride. Along the way, you gain an increasing share of the awe-inspiring power of dragons.</p>
+			<div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_DRACONIC_GIFT" />
+			<div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_DRAKE_COMPANION" />
+			<div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_BOND_OF_FANG_AND_SCALE" />
+			<div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_DRAKES_BREATH" />
+			<div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_PERFECTED_BOND"/>
+		</description>
+		<sheet display="false">
+			<description>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_DRACONIC_GIFT" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_DRAKE_COMPANION" level="3" />
+			<!--Still under devlopment since I'm only level 3 and lazy as fuck-->
+			<!--
+			<grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_BOND_OF_FANG_AND_SCALE" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_DRAKES_BREATH" level="11" />
+			<grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_PERFECTED_BOND" level="15" />
+			-->
+		</rules>
+	</element>
+	
+	
+	<element name="Drake Companion" type="Archetype Feature" source="Unearthed Arcana" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_DRAKE_COMPANION">
+		<description>
+			<p>At 3rd level, as an action, you can magically summon the drake that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.</p>
+			<p class="indent">The drake is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying Drake Companion stat block, which uses your proficiency bonus (PB) in several places. Whenever you summon the drake, choose a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake, such as its color, its scale texture, or any visible effect of its Draconic Essence; your choice has no effect on its game statistics.</p>
+			<p class="indent">In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the drake can take any action of its choice, not just Dodge.</p>
+			<p class="indent">The drake remains until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you die. Anything the drake was wearing or carrying is left behind when the drake vanishes.</p>
+			<p class="indent">Once you summon the drake, you can’t do so again until you finish a long rest, unless you expend a spell slot of 1st level or higher to summon it.</p>
+		</description>
+		<sheet>
+			<description>The drake obeys your commands as best as it can. It takes its turn on your initiative, though it doesn’t take an action unless you command it to using a bonus action. On your turn, you can verbally command the drake where to move.
+			The drake remains until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you die. Anything the drake was wearing or carrying is left behind when the drake vanishes.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Drake Companion" supports="Drake Companion" default="ID_WOTC_UA_COMPANION_RANGER_DRAKE_COMPANION"/>
+		</rules>
+	</element>
+	<element name="Draconic Gift" type="Archetype Feature" source="Unearthed Arcana" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_DRACONIC_GIFT">
+		<description>
+			<p>At 3rd level, the bond you share with your drake creates a connection to dragonkind, granting you understanding and empowering your presence.</p>
+			<p class="indent">You gain the following benefits:</p>
+			<ul><li><strong>Thaumaturgy.</strong> You learn the Thaumaturgy cantrip, which is a ranger spell for you.</li></ul>
+			<ul><li><strong>Tongue of Dragons.</strong> You learn to speak, read, and write Draconic or one other language of your choice.</li></ul>
+		</description>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY"/>
+		</rules>
+	</element>
+	
+	<!--Still under development since my character's only level 3-->
+	<!--
+	<element name="Bond of Fang and Scale" type="Archetype Feature" source="Unearthed Arcana" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_BOND_OF_FANG_AND_SCALE">
+		<description>
+			<p>At 7th level the bond you share with your drake intensifies, protecting you and stoking the drake’s fury. When you summon your drake, it grows wings on its back and gains a flying speed equal to its walking speed.</p>
+			<p>In addition, while your drake is summoned, you and the drake gain the following benefits:</p>
+			<ul>
+				<li><strong>Drake Mount.</strong> The drake grows to Medium size. Reflecting your special bond, you can use the drake as a mount if your size is Medium or smaller. While you are riding your drake, it can’t use the flying speed of this feature.</li>
+				<li><strong>Magic Fang.</strong> The drake’s Bite attack deals an extra 1d6 damage of the type chosen for the drake’s Draconic Essence.</li>
+				<li><strong>Resistance.</strong> You gain resistance to the damage type chosen for the drake’s Draconic Essence.</li>
+			</ul>
+		</description>
+	</element>
+	-->
+	
+	<element name="Drake Companion" type="Companion" source="Unearthed Arcana" id="ID_WOTC_UA_COMPANION_RANGER_DRAKE_COMPANION">
+		<supports>Drake Companion</supports>
+		<description>
+			<p>Yuh drake big boy and can fight now I dont know what the desciption is</p>
+		</description>
+		<setters>
+			<set name="strength">16</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">8</set>
+			<set name="ac">14 + Proficiency Bonus</set>
+			<set name="hp">5 + five times your ranger level</set>
+			<set name="speed">40 ft.</set>
+			<set name="immunities">determined by the drake’s Draconic Essence trait</set>			
+			<set name="saves">Dex +1 plus PB, Wis +2 plus PB</set>
+			<set name="senses">darkvision 60 ft., passive Perception 12</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Small</set>
+			<set name="alignment">neutral</set>
+			<set name="challenge">PB</set>
+			<set name="trait">ID_WOTC_UA_COMPANION_TRAIT_DRAKE_COMPANION_DRACONIC_ESSENCE</set>
+			<set name="actions">ID_WOTC_UA_COMPANION_ACTION_DRAKE_COMPANION_BITE</set>
+			<set name="reactions">ID_WOTC_UA_COMPANION_REACTION_DRAKE_COMPANION_INFUSED_STRIKES</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="15" bonus="proficiency" />
+			<stat name="companion:hp:max" value="5" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:hp:max" value="level:artificer" />
+			<stat name="companion:speed" value="40" bonus="base" />	
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<grant type="Companion Trait" id="ID_WOTC_UA_COMPANION_TRAIT_DRAKE_COMPANION_DRACONIC_ESSENCE" />
+		</rules>
+	</element>
+	<element name="Draconic Essence" type="Companion Trait" source="Unearthed Arcana" id="ID_WOTC_UA_COMPANION_TRAIT_DRAKE_COMPANION_DRACONIC_ESSENCE" />
+		<description>
+			<p><strong>Draconic Essence.</strong> When you summon the drake, choose a damage type: acid, cold, fire, lightning, or poison. The chosen type determines the drake’s damage immunity and the damage of its Infused Strikes trait.</p>
+		</description>
+		<sheet>
+			<description>Draconic Essence. When you summon the drake, choose a damage type: acid, cold, fire, lightning, or poison. The chosen type determines the drake’s damage immunity and the damage of its Infused Strikes trait.</description>
+		</sheet>
+		<!--Currently almost 3am and I'm tired and don't know xml so I'm not implementing the ability to choose your essence yet lmao, just take acid bro-->
+		<rules>
+			<set type="conditionImmunities">acid</set>
+		</rules>
+	</element>
+	
+</elements>
